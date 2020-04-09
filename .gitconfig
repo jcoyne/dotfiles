@@ -1,0 +1,8 @@
+# This alias lets you use "git cleanup" in the following scenario:
+#   - you're on a branch
+#   - that branch just got merged on the remote
+#   - you would like to switch to master, update it, and delete your now-useless local branch
+#   - you don't want to type three almost-identical commands every time you do this thing you do all the time
+# Yay! Now you can do the thing in two words.
+[alias]
+        cleanup = "!f() { branch_name=$(git rev-parse --abbrev-ref HEAD); git checkout master; git branch -D ${branch_name}; git pull;}; f"
