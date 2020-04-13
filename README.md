@@ -1,5 +1,5 @@
 # dotfiles
-shell configuration
+shell configuration files
 
 ## Dependencies
 ```
