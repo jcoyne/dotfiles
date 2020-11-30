@@ -1,3 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+    	name = Justin Coyne
+    	email = jcoyne@justincoyne.com
+[core]
+	excludesfile = ~/.gitignore_global
+[push]
+    default = simple
+[credential]
+    helper = osxkeychain
 # This alias lets you use "git cleanup" in the following scenario:
 #   - you're on a branch
 #   - that branch just got merged on the remote
