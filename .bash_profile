@@ -14,3 +14,5 @@ alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias dcu='docker-compose up'
 alias dcd='docker-compose up db'
+alias rc="git status -s --untracked-files=no --porcelain *.rb |tr -d ' M ' |xargs rubocop"
+alias rca="git status -s --untracked-files=no --porcelain *.rb |tr -d ' M ' |xargs rubocop -a"
