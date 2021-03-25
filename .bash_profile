@@ -10,6 +10,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+
+# for mimemagic gem. For some reason this is in /usr/local rather than /opt
+export FREEDESKTOP_MIME_TYPES_PATH=/usr/local/homebrew/share/mime/packages/freedesktop.org.xml
+
 alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias dcu='docker-compose up'
