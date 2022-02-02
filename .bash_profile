@@ -20,6 +20,7 @@ alias dcu='docker compose up'
 alias dcd='docker compose up db'
 alias rc="git status -s --untracked-files=no --porcelain *.rb |tr -d ' M ' | tr -d ' A ' | xargs rubocop"
 alias rca="git status -s --untracked-files=no --porcelain *.rb |tr -d ' M ' | tr -d ' A ' | xargs rubocop -a"
+alias rcaa="git status -s --untracked-files=no --porcelain *.rb |tr -d ' M ' | tr -d ' A ' | xargs rubocop -A"
 alias gs='git status'
 alias gc='git commit'
 alias gco='git checkout'
